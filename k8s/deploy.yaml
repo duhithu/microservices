@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-service
+spec:
+  selector:
+    matchLabels:
+      app: payment-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: payment-service
+    spec:
+      containers:
+      - name: payment-service
+        image: it19123882/ctse_it19123882:f66a8699841efb1cc6198d492ac75ea2f33f1ee0
+        ports:
+        - containerPort: 3000
