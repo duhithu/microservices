@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 const URL = process.env.MONGODB_URL;
 
 //Port to run the server
-const PORT = process.env.PORT || 8070;
+const PORT = process.env.PORT || 3000;
 
 
 //create mongoose connection

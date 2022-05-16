@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: payment-service
-        image: it19123882/ctse_it19123882:f66a8699841efb1cc6198d492ac75ea2f33f1ee0
+        image: duhi1/microservices:df1b3ca090d0033bdbae7261eabf95eea1aa6c76
         ports:
         - containerPort: 3000
